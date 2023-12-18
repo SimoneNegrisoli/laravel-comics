@@ -10,23 +10,19 @@
             <div class="row">
                 @foreach ($comics as $comic)
                     <div class="col-12 col-md-4 col-lg-3">
-                        <div class="thecard my-5 card  ">
+                        <div class="card thecard">
                             <div class="mycard-c">
-                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                                <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="{{ $comic['title'] }}">
                             </div>
-                            <div class="mycard my-1 ">
-                                <div class="card-title">
-                                    <h3>{{ $comic['title'] }}</h3>
-                                </div>
-                                <div class="mycard-b">
-                                    {{ $comic['description'] }}
-                                    <div class="d-flex justify-content-between ">
-                                        <div>
-                                            {{ $comic['series'] }}
-                                        </div>
-                                        <div>
-                                            {{ $comic['price'] }}
-                                        </div>
+                            <div class="card-body d-flex  flex-column  justify-content-between ">
+                                <h5 class="card-title">{{ $comic['title'] }}</h5>
+
+                                <div class="d-flex justify-content-between ">
+                                    <div>
+                                        {{ $comic['series'] }}
+                                    </div>
+                                    <div>
+                                        {{ $comic['price'] }}
                                     </div>
                                 </div>
                             </div>
