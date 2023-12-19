@@ -18,3 +18,17 @@ Route::get('/', function () {
     //dd($comics);
     return view('home', compact('comics'));
 });
+
+
+Route::get('/comics/{id}', function ($id) {
+    $comicsdb = config('db.comics');
+    //dd($comicsdb);
+
+    if ($id >= 0 && $id < count($comicsdb)) {
+        $comic = $comicsdb[$id];
+
+        return view('comics.show', compact('comic'));
+    } else {
+        abort(404);
+    }
+})->name('comics.show');
