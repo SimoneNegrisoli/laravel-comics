@@ -11,14 +11,9 @@ $fa-font-path: "../webfonts" !default;
 @import '~bootstrap/scss/bootstrap';
 
 
-h1{
-    color: $text-color;
-}
 .thecard{
     width: 100%;
-    height: 300px;
-    margin-top: 1.5rem;
-    margin-bottom: 2.5rem;
+    height: 340px;
     cursor: pointer;
     transition: all 0.5s;
 
@@ -61,4 +56,16 @@ h1{
     .card-text{
         line-height: 1.7rem;
     }
+}
+.jumbo{
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/jumbotron.jpg');
+}
+.mybtn{
+    padding: 5px;
+    background-color: rgb(53, 121, 256);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }

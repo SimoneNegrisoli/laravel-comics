@@ -4,7 +4,7 @@
 
 <header>
     <div class="container">
-        <div class="row align-items-center pt-4">
+        <div class="row align-items-center p-4">
             <div class="col-12 col-md-4">
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo" />
             </div>
@@ -16,9 +16,8 @@
                         </a>
                     </li>
                 @endforeach
-
             </ul>
         </div>
-
     </div>
+    <div class="jumbo"></div>
 </header>
